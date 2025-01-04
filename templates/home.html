@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -7,8 +8,38 @@
     <title>Shellcode Crafter</title>
 </head>
 <body>
-<h1>
-    ShellCode Crafter
-</h1>
-</body>
+    <body>
+        <header>
+            <h1>ShellcodeCrafter</h1>
+        </header>
+            <main>
+                <nav>
+                    <h2>menu</h2>
+                </nav>
+                <div id="Input_div">
+                    <h3>Input</h3>
+                    <span>
+                        <textarea id="input_text">
+                        </textarea>
+                    </span>
+                </div>
+                <section>
+                    <div>
+                        <button>Button</button>
+                    </div>
+                </section>
+                <div id="Output_div">
+                    <h3>Output</h3>
+                    <span>
+                        <textarea id="output_text">
+                        </textarea>
+                    </span>
+                </div>
+                <aside>
+                </aside>
+        </main>
+        <footer>
+            <h1>Last</h1>
+        </footer>
+    </body>
 </html>
