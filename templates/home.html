@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static',filename='icon/favicon.ico') }}">
     <title>Shellcode Crafter</title>
 </head>
 <body>
-    <body>
-        <header>
-            <h1>ShellcodeCrafter</h1>
-        </header>
-            <main>
-                <nav>
-                    <h2>menu</h2>
-                </nav>
-                <div id="Input_div">
-                    <h3>Input</h3>
-                    <span>
-                        <textarea id="input_text">
-                        </textarea>
-                    </span>
-                </div>
-                <section>
-                    <div>
-                        <button>Button</button>
-                    </div>
-                </section>
-                <div id="Output_div">
-                    <h3>Output</h3>
-                    <span>
-                        <textarea id="output_text">
-                        </textarea>
-                    </span>
-                </div>
-                <aside>
-                </aside>
+    <div id="layout">
+        <main>
+            <header id="title">
+                <h2>Shellcode Crafter</h2>
+            </header>
+            <section>
+                <h3>Input</h3>
+                <textarea id="inputtext" spellcheck="false"></textarea>
+                <button>Craft</button>
+                <h3>Output</h3>
+                <textarea id="outputtext" spellcheck="false"></textarea>
+            </section>
+            <footer id="footerSections">
+                <h3>footer</h3>
+            </footer>
         </main>
-        <footer>
-            <h1>Last</h1>
-        </footer>
-    </body>
+    </div>
+</body>
 </html>
