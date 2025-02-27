@@ -9,37 +9,35 @@
 </head>
 <body>
     <body>
+        <div id= "wrapper">
         <header>
             <h1>ShellcodeCrafter</h1>
         </header>
             <main>
-                <nav>
-                    <h2>menu</h2>
-                </nav>
-                <div id="Input_div">
+                <div id="Input_div" class = "TEXT_DIV">
                     <h3>Input</h3>
                     <span>
-                        <textarea id="input_text">
-                        </textarea>
+                        <textarea id="input_text" class = "FOR_TEXT"></textarea>
                     </span>
                 </div>
-                <section>
+                <section id = "option_section">
+                    <h3>Assembler-type
                     <div>
-                        <button>Button</button>
+                        <input type="radio" class="assembler-type" value="Intel" checked> Intel
+                        <input type="radio" class="assembler-type" value="ATT" checked> ATT
+                    </div>
+                    <div>
+                        <button id = "transform_button">Assembler<br>to<br>Shellcode!</button>
                     </div>
                 </section>
-                <div id="Output_div">
-                    <h3>Output</h3>
+                <div id="Output_div" class = "TEXT_DIV">
+                    <h3>ShellCode</h3>
                     <span>
-                        <textarea id="output_text">
-                        </textarea>
+                        <textarea id="output_text" class = "FOR_TEXT"></textarea>
                     </span>
                 </div>
-                <aside>
-                </aside>
         </main>
-        <footer>
-            <h1>Last</h1>
-        </footer>
+    </div>
+    <script rel="stylesheet" src="{{ url_for('static', filename='js/main.js') }}"></script>
     </body>
 </html>
